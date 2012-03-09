@@ -142,6 +142,7 @@ public:
     minMax<float> feedrateBounds;
     minMax<float> flowrateBounds;
     minMax<float> zHeightBounds;
+    minMax<float> xBounds,yBounds;
 
 public:
     gcodeModel();

@@ -27,6 +27,10 @@ public:
     void panX(float amount);
     void panY(float amount);
     void setCurrentLayer(int layer);
+    float getScale();
+    float getPanX();
+    float getPanY();
+    int getCurrentLayer();
 
 protected:
     void initializeGL();

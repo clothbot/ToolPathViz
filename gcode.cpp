@@ -232,9 +232,11 @@ void gcodeModel::loadGCode(QString filename) {
             // but we need to just define a standard and stick to it. The standard is in the form of an imaginary test suite.
             if (code.hasCode('X')) {
                 xPos = code.getCodeValue('X');
+                xBounds.evaluate(xPos);
             }
             if (code.hasCode('Y')) {
                 yPos = code.getCodeValue('Y');
+                yBounds.evaluate(yPos);
             }
             if (code.hasCode('Z')) {
                 zPos = code.getCodeValue('Z');

@@ -219,3 +219,19 @@ void GcodeView::setCurrentLayer(int layer) {
         updateGL();
     }
 }
+
+float GcodeView::getScale() {
+    return scale;
+}
+
+float GcodeView::getPanX() {
+    return pan_x;
+}
+
+float GcodeView::getPanY() {
+    return pan_y;
+}
+
+int GcodeView::getCurrentLayer() {
+    return currentLayer;
+}
