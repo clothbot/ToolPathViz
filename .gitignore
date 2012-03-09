@@ -1,0 +1,7 @@
+GcodeViewer.pro.user
+Makefile
+GCodeViewer.app
+*.o
+moc_gcodeview.cpp
+moc_mainwindow.cpp
+ui_mainwindow.h
