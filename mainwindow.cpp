@@ -146,6 +146,8 @@ void MainWindow::loadFile(const QString &fileName) {
     // TODO: Do loading in background task...
     ui->graphicsView->loadModel(fileName);
     ui->LayerHeight->setMaximum(ui->graphicsView->model.map.size());
+    ui->graphicsView->setCurrentLayer(ui->graphicsView->model.map.size()-1);
+    ui->LayerHeight->setValue(ui->graphicsView->model.map.size()-1);
 }
 
 bool MainWindow::hasFile() {
